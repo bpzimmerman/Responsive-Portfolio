@@ -1,0 +1,358 @@
+/* Base color scheme rgb 5C86C4 (http://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF) */
+
+/* General */
+
+*{
+    padding: 0;
+    border: none;
+    margin: 0;
+}
+
+html{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url("../images/lblue011.jpg");
+    background-color: rgb(212, 225, 255);
+    height: 100%;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#container{
+    min-height: 100%;
+    position: relative;
+}
+
+/* Header */
+
+#head-wrap{
+    background-color: white;
+    padding: 0px;
+    border-bottom: 2px solid #ffbc4a;
+}
+
+.head-content{
+    max-width: 960px;
+    height: auto;
+    margin: auto;
+}
+
+.page-nav{
+    float: right;
+    font-size: 16px;
+    padding: 23px;
+    padding-right: 0px;
+}
+
+.headline h1{
+    background-color: #3d69ab;
+    color: white;
+    font-size: 32px;
+    padding: 15px;
+    display: inline-flex;
+    float: left;
+}
+
+.headline a, .headline p{
+    color: #84a7db;
+    text-decoration: none;
+    display: inline-flex;
+}
+
+.center-link{
+    padding: 0 10px 0 10px;
+    margin: 0 5px 0 5px;
+    border-left: 1px solid #e0ebfb;
+    border-right: 1px solid #e0ebfb;
+}
+
+/* Main page */
+
+#main{
+    max-width: 960px;
+    padding: 10px;
+    padding-bottom: 60px;   /* Height of the footer */
+    margin: auto;
+}
+
+.content{
+    background-color: white;
+    max-width: 610px;
+    height: auto;
+    padding: 20px;
+    display: inline-block;
+}
+
+.content h2{
+    color: #3d69ab;
+    font-size: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #3d69ab;
+    margin-bottom: 15px;
+}
+
+.content p{
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 160%;
+}
+
+#portrait{
+    height: 30%;
+    width: 30%;
+    padding-right: 10px;
+    float: left;
+}
+
+.sidebar{
+    background-color: white;
+    max-width: 230px;
+    height: auto;
+    padding: 20px;
+    float: right;
+}
+
+.sidebar h3{
+    color: #3d69ab;
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #3d69ab;
+    margin-bottom: 15px;
+}
+
+.sidebar img, .sidebar a{
+    height: 72px;
+    width: 72px;
+    text-decoration: none;
+}
+
+/* Contact specific styles */
+
+form{
+    color: #3d69ab;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #3d69ab;
+    margin: 8px 0px 20px 0px;
+    box-sizing: border-box;
+}
+
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #3d69ab;
+    margin: 8px 0px 20px 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=submit]{
+    background-color: #3d69ab;
+    color: white;
+    font-size: 18px;
+    padding: 10px 25px;
+}
+
+/* Portfolio specific styles */
+
+.port-img{
+    height: 48%;
+    width: 48%;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.img-right{
+    padding-left: 15px;
+}
+
+.lab-right{
+    margin-left: 15px;
+}
+
+.content a{
+    text-decoration: none;
+    position: relative;
+}
+
+.label{
+    color: white;
+    background-color: #3d69ab;
+    padding: 10px;
+    position: absolute;
+    top: -36.5px;
+    left: 0px;
+    z-index: 100;
+}
+
+/* Footer */
+
+#foot-wrap{
+    background-color: #3d69ab;
+    height: 60px;    /* Height of the footer */
+    width: 100%;
+    border-top: 5px solid #ffbc4a;
+    position: absolute;
+    bottom: 0;
+}
+
+.foot-content{
+    max-width: 960px;
+    height: auto;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 38px;
+    margin: auto;
+    color: white;
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 980px) {
+    
+    .head-content{
+        max-width: 759px;
+    }
+    
+    #portrait{
+        height: 100%;
+        width: 100%;
+        float: none;
+    }
+
+    #main{
+        max-width: 759px;
+    }
+
+    .content{
+        max-width: 482px;
+    }
+
+    .sidebar{
+        max-width: 182px;
+    }
+
+    .sidebar img, .sidebar a{
+        height: 57.7px;
+        width: 57.7px;
+    }
+
+    .port-img{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .img-right{
+        padding-left: 0px;
+    }
+    
+    .lab-right{
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .head-content{
+        max-width: 100%;
+        padding: 0 10px 0 10px;
+    }
+
+    #portrait{
+        height: 50%;
+        width: 50%;
+        float: left;
+    }
+
+    #main{
+        max-width: 100%;
+    }
+
+    .sidebar{
+        margin-top: 15px;
+        float: none;
+        max-width: 100%;
+    }
+
+    .sidebar h3{
+        text-align: left;
+    }
+
+    .sidebar img, .sidebar a{
+        height: 72px;
+        width: 72px;
+    }
+
+    .content{
+        max-width: 100%;
+    }
+    .port-img{
+        height: 48.5%;
+        width: 48.5%;
+    }
+    
+    .img-right{
+        padding-left: 15px;
+    }
+    
+    .lab-right{
+        margin-left: 15px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    
+    .head-content{
+        text-align: center;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .page-nav{
+        float: none;
+        padding: 23px 0;
+    }
+
+    .headline h1{
+        padding: 15px 0 15px 0;
+        display: block;
+        float: none;
+        width: 100%;
+    }
+
+    .center-link{
+        padding: 0 60px 0 60px;
+        margin: 0 55px 0 55px;
+    }
+        
+    #portrait{
+        height: 100%;
+        width: 100%;
+        float: none;
+    }
+
+    .port-img{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .img-right{
+        padding-left: 0px;
+    }
+    
+    .lab-right{
+        margin-left: 0px;
+    }
+}
